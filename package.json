@@ -1,0 +1,25 @@
+{
+    "name": "plcc-syntax-highlighter",
+    "displayName": "PLCC Syntax Highlighter",
+    "description": "Syntax highlighter for PLCC grammars",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "plcc",
+            "aliases": ["PLCC", "plcc"],
+            "extensions": [".plcc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "plcc",
+            "scopeName": "source.plcc",
+            "path": "./syntaxes/plcc.tmLanguage.json"
+        }]
+    }
+}
