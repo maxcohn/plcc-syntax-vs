@@ -8,6 +8,7 @@ meant for teaching concepts of programming languages.
 Adds basic syntax highlighting for PLCC grammars.
 
 Here's an example:
+
 ![example](images/plcc-highlighter-example.png)
 
 ## Requirements
@@ -15,4 +16,4 @@ Here's an example:
 No dependencies or anything, just a raw VS Code
 language support extension. Should work no problem.
 
-## Made by Maxwell Cohn, an RIT student
+#### Made by Maxwell Cohn, an RIT student
