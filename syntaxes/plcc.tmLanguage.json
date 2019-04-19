@@ -3,20 +3,21 @@
 	"name": "PLCC",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"name": "keyword.control.plcc",
+			"match": "\\b(token|skip|include)\\b"
 		},
 		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.plcc",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"name": "string.quoted.single.plcc",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.plcc",
+					"match": "\\\\."
+				}
+			]
 		},
-		"strings": {
+		{
 			"name": "string.quoted.double.plcc",
 			"begin": "\"",
 			"end": "\"",
@@ -26,7 +27,20 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		{
+			"name": "comment.line.number-sign",
+			"begin": "#",
+			"end": "$"
+		},
+		{
+			"name": "storage.type",
+			"begin": "<",
+			"end": ">"
 		}
+	],
+	"repository": {
+		
 	},
 	"scopeName": "source.plcc"
 }
