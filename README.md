@@ -9,7 +9,7 @@ Adds basic syntax highlighting for PLCC grammars.
 
 Here's an example:
 
-![example](images/plcc-highlighter-example.png)
+<img src="images/plcc-highlighter-example.png" alt="drawing" style="width: 300px;" />
 
 ## Requirements
 
